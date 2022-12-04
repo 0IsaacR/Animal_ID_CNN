@@ -1,4 +1,6 @@
 # Animal_ID_CNN
+Convolutional Neural Network: preprocessing, model analysis
+
 The purpose of this project was to create a model that could atleast identify with 50% accuracy 10 different animals/bugs.
 
 This project uses a dataset from kaggle.com. The dataset contains nearly 30,000 images of 10 different animals/bugs. Using this dataset my task is to work with inbalanced data since some classes have a lot more images than others. Also in order to use my model, i needed to make sure all the images were equal size. I created a function that crops images from the center and leaves a image of size 150x150. 
