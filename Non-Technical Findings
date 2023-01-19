@@ -1,0 +1,30 @@
+###Non-Technical Image classifier (Animals)
+
+In this project, I wanted to create a machine learning model that looked at pictures of animals and at the bare minimum 
+correctly identified the name of the animal half of the time. I used a selection of photos from 10 different animals/bugs. 
+The person who collected these photos grabbed them from google searching. In total, I used close to 30,000 photos to create 
+my model.
+
+Major issues arise from “scaping” images from google search. Some of these images were of the correct animal but they could 
+also include images of other animals or humans. For example, if you were to google search images of dogs. You would find photos
+of dogs with other dogs and humans too. These issues certainly reduce the accuracy of my model when it is supposed to classify a
+dog. Another aspect is that the majority of those images are different sizes and resolutions. There were features put in place 
+to handle these types of problems.
+
+After sorting and properly labeling all the photos. I created the model that breaks down these images and finds similarities 
+between images that are alike. The term Neural Network implies the use of a “brain”, and similarly connections are made with 
+these things called weights and biases that allow my model to learn as it reviews each image.
+
+When the model is reviewing those images, the code must be left alone. You cannot continue to work on the project because the 
+computer needs to finish reviewing the images first. In this case where I am working with close to 30,000 images, this process can 
+easily take more than 2 hours. 
+
+Something I should have not done, was when I took a guess and check approach to see if the model is getting better. I would make small 
+changes to my model and run it to see how it would perform. This was by far the most time-consuming part of this project.
+
+As of now I have two versions of my project. My initial version reached a reliability of 0.48. This was very close to my goal of 0.50. 
+My second version reached a reliability of 0.62. This increase of reliability was achieved by introducing variations of the same images
+at different angles. These extra images really help my model to decern between different animals.
+
+My next steps include introducing new ways to add images to my collection. It is also possible to allow the model to train for an 
+extended amount of time to see if it surpasses its current reliability.
