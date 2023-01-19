@@ -1,24 +1,32 @@
-# Animal_ID_CNN
-Convolutional Neural Network: preprocessing, model analysis
+### Animal_ID_CNN
+**Isaac Rodriguez-Jimenez**
 
-The purpose of this project was to create a model that could atleast identify with 50% accuracy 10 different animals/bugs.
+#### Executive Summary
 
-This project uses a dataset from kaggle.com. The dataset contains nearly 30,000 images of 10 different animals/bugs. Using this dataset my task is to work with inbalanced data since some classes have a lot more images than others. Also in order to use my model, i needed to make sure all the images were equal size. I created a function that crops images from the center and leaves a image of size 150x150. 
-Next I encoded the animal/bug classes and created a training set, validation set, and test set.
-Finally, I created a Convolutional neural network. Through trial and error i was able to come up with the values i used for convolution filtering and hidden layers.
-After fitting the network, we can see how the model slowly starts to overfit. As the training loss goes down, the validation loss dips but then starts increasing. The classification report shows the precision, recall, F1 score and support. These values are used to judge the models performance. Lastly, I show some images at the end where the title shows the predicted image class and the real class.
+#### Rationale
+Now a days, phones and cameras have machine learning algorythms built into them. On some phones, when you take a picture of an animal, sometimes it will be able to tell you what kind of animal it is. This problem is called image classification. This type of machine learning model not only applies to animals but to everything else in the world than can be named/classified. These models have the potential to indentify any object so it is best to understand its fundamentals with pictures of animals.
 
-Findings:
-Additional preprocessing was necessary in order to get better quality images and better model performance. This is due to the fact that not all classes have similar image counts. The classes have an imbalanced amount of images. This leads to a AVG precision and recall score of 0.48. This means that half of the time the model correctly classifies an image. In order to increase this number we need more images. 
+#### Research Question
+My initial question was to find out if i could create a model that could at the very minimum achieve 50% accuracy readings.
 
-In order to increase the number of images in these classes, I used data augmentation. The Pillow library allowed me to resize all my images and I was also able to horizontally flip images in certain classes that needed it. These two simple lines of code were able to replace a function i had created to resize images by cropping. 
+#### Data Sources
+The data i used was a collection of folders that included pictures of animals. These pictures were all of different sizes and resolutions. They were downloaded from Kaggle.com and included 10 different animals with a minimum of 1000 pictures per folder. https://www.kaggle.com/datasets/alessiocorrado99/animals10
 
-Using this new model defintely seems promesing for me. I hope i can break the 48% precision and recall and go past 50%. Running only 4 epochs does not show the whole story but i achieved 62% AVG precision and recall. With more time set aside this model can be left to train for a couple hours for a proper evaluation.
+#### Methodology
+-Initial image manipulation required resizing of all images to a standardized size i chose of 150x150x3. 
+-Due to imbalances in the animal image count. I decided to transpose images in order to flip them and add them to thier folders. This was done to increase image count for certain animals.
+-After creating the convolutional model. I ran some metrics testing in order to determine how my model performed.
 
-Some of the things i tried and were not shown is hyper parameter tuning. Parameters like size of neural network and size of convolutional filters were attempted but they took too long and i preferred a quicker trial and error method. 
+#### Results
+My initial results on my first version gave me an average precision and recall of 0.48.
+In my second version i achieved an average precision and recall of 0.62 just by changing the way my images were being saved and increasing the testing set.
 
-Also in my first version of my code i had a function that resized all my images into a size of 150x150. It did this though croping from the center. Using this function lead to large images appearing zoomed in. This pre-processing method that i used was too destructive on the data. Instead i used Tensorflows resize function.
+#### Outline of project
 
-Another feature i wanted to implement but took up too much ram was normalizing the images.
+- [Link to notebook 1]()
+- [Link to notebook 2]()
+- [Link to notebook 3]()
 
-Overall this project was a great experience, the only parts that i did not like was waiting for the model to train. Each epoch was about 20 minutes so for this final version i only ran it for 4 epochs but i was planning to do around 15.
+
+##### Contact and Further Information
+https://www.linkedin.com/in/risaac13/
