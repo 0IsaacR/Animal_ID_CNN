@@ -23,7 +23,7 @@ In my second version i achieved an average precision and recall of 0.62 just by 
 
 #### Outline of project
 
-- [Link to notebook 1]()
+- [Project File](https://github.com/0IsaacR/Animal_ID_CNN/blob/main/Animal_Classification.ipynb)
 - [Technical Write Up](https://github.com/0IsaacR/Animal_ID_CNN/blob/main/Technical%20Finding)
 - [Non-Technical Write Up](https://github.com/0IsaacR/Animal_ID_CNN/blob/main/Non-Technical%20Findings)
 
