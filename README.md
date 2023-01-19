@@ -24,7 +24,7 @@ In my second version i achieved an average precision and recall of 0.62 just by 
 #### Outline of project
 
 - [Link to notebook 1]()
-- [Link to notebook 2]()
+- [Technical Write Up](https://github.com/0IsaacR/Animal_ID_CNN/blob/main/Technical%20Finding)
 - [Link to notebook 3]()
 
 
